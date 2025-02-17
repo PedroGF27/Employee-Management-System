@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Employee_Management_System
 {
-    internal class ITDepartment
+    internal class ITDepartment : Department
     {
+        public override void GetDepartmentDetails()
+        {
+            Console.WriteLine("Manages technical resources and infrastructure.");
+        }
+
     }
 }
