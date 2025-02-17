@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.Write("Enter ID: ");
+            string_em = Console.ReadLine();
+            Console.WriteLine("Enter First Name: ");
+            Console.WriteLine("Enter Middle Name: ");
+            Console.WriteLine("Enter Last name: ");
+            Console.WriteLine("Enter Salary: ");
         }
     }
 }

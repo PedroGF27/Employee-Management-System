@@ -61,6 +61,7 @@ namespace Employee_Management_System
                     {
                         throw new ArgumentException("Please enter a valid number.");
                     }
+                    _salary = value;
                 }
             }
 
@@ -80,7 +81,7 @@ namespace Employee_Management_System
             public void DisplayEmployeeInfo()
             {
 
-                Console.WriteLine($"");
+                Console.WriteLine($"Salary: {Salary:F2}");
             }
         
     }
