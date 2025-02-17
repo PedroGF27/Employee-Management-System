@@ -4,12 +4,24 @@
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter ID: ");
-            string_em = Console.ReadLine();
+            Console.WriteLine("Enter ID: ");
+            string EmployeeId = Console.ReadLine();
             Console.WriteLine("Enter First Name: ");
+            string FirstName = Console.ReadLine();
             Console.WriteLine("Enter Middle Name: ");
+            string MiddleName = Console.ReadLine();
             Console.WriteLine("Enter Last name: ");
+            string LastName = Console.ReadLine();
             Console.WriteLine("Enter Salary: ");
+            while (!double.TryParse(Console.ReadLine(), out double Salary))
+            {
+                return;
+            }
+
+            HRDepartment HRD = new HRDepartment();
+            ITDepartment ITD = new ITDepartment();
+
+
         }
     }
 }

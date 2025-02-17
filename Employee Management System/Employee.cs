@@ -9,7 +9,7 @@ namespace Employee_Management_System
     internal class Employee
     {
         
-            private string _employeeId = "003A";
+            private string _employeeId;
             private string _firstName;
             private string _middleName;
             private string _lastName;
@@ -65,7 +65,7 @@ namespace Employee_Management_System
                 }
             }
 
-            public Employee(string FirstName, string MiddleName, string LastName, double Salary)
+            public Employee(string EmployeeId, string FirstName, string MiddleName, string LastName, double Salary)
             {
                 _firstName = FirstName;
                 _middleName = MiddleName;
