@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter ID: ");
+            Console.WriteLine("Enter Employee ID: ");
             string EmployeeId = Console.ReadLine();
             Console.WriteLine("Enter First Name: ");
             string FirstName = Console.ReadLine();
@@ -21,7 +21,13 @@
             HRDepartment HRD = new HRDepartment();
             ITDepartment ITD = new ITDepartment();
 
+            HRD.DisplayDepartmentInfo();
+            HRD.Operate();
+            HRD.GetDepartmentDetails();
 
+            ITD.DisplayDepartmentInfo();
+            ITD.Operate();
+            ITD.GetDepartmentDetails();
         }
     }
 }
