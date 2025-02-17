@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Employee_Management_System
 {
-    internal class IDepartmentOperations
+    interface IDepartmentOperations
     {
+        void Operate();
     }
 }
