@@ -8,13 +8,14 @@ namespace Employee_Management_System
 {
 
     
-        abstract class Department
+       abstract class Department
         {
             public string DepartmentName
             {
                 get; set;
             }
-
+            
+            
             public abstract void GetDepartmentDetails();
 
             public void DisplayDepartmentInfo()

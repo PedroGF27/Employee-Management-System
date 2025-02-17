@@ -13,10 +13,13 @@
             Console.WriteLine("Enter Last name: ");
             string LastName = Console.ReadLine();
             Console.WriteLine("Enter Salary: ");
-            while (!double.TryParse(Console.ReadLine(), out double Salary))
+            if (!double.TryParse(Console.ReadLine(), out double Salary))
             {
                 return;
             }
+
+            Employee employeeInfo = new Employee(EmployeeId, FirstName, MiddleName, LastName, Salary);
+            employeeInfo.DisplayEmployeeInfo();
 
             HRDepartment HRD = new HRDepartment();
             ITDepartment ITD = new ITDepartment();

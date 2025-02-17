@@ -73,15 +73,17 @@ namespace Employee_Management_System
                 _salary = Salary;
             }
 
-            public void PrintFullName()
-            {
-                Console.WriteLine($"{FirstName} {MiddleName} {LastName}");
-            }
+            //public void PrintFullName()
+            //{
+            //    Console.WriteLine($"{FirstName} {MiddleName} {LastName}");
+            //}
 
             public void DisplayEmployeeInfo()
             {
 
-                Console.WriteLine($"Salary: {Salary:F2}");
+                Console.WriteLine($"\nEmployee ID: {EmployeeId}");
+                Console.WriteLine($"Name: {FirstName} {MiddleName} {LastName}");
+                Console.WriteLine($"Salary: ${Salary}");
             }
         
     }
